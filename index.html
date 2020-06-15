@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/lux/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/sidebar.css">
+</head>
+<body>
+<div class="container-fluid">
+  <!-- baner -->
+  <div class="banner">
+    <div class="home"><a href="localhost">acceuill</a></div>
+  </div>
+  <!-- baner -->
+  <!-- header -->
+  <header>
+    <div class="headerwraper">
+      <div class="header-item logo ">
+        <div class="logo"><h3>website brand</h3></div>
+      </div>
+      <div class="header-item searchfield">
+
+
+        <input type="search" id="search-input" placeholder="Que recherchez-vous ?" results>
+      </div>
+      <div class="header-item header-butons">
+
+
+      </div>
+
+    </div>
+
+
+  </header>
+
+  <!-- end header -->
+  <!-- nav -->
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg    ">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  catnav ">
+        <!-- this is where the megic happen -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Femme
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+            <div class="container">
+              <div class="row">
+                <div class="subcat">
+                  <span class="text-uppercase text-white"> Nouveautés </span>
+                  <span class="text-uppercase text-white">  Vetements </span>
+                  <span class="text-uppercase text-white">  Lingerie </span>
+                  <span class="text-uppercase text-white">   Chaussures</span>
+                  <span class="text-uppercase text-white">  Sacs accessoires </span>
+                  <span class="text-uppercase text-white"> Beauté  </span>
+                  <span class="text-uppercase text-white">   Grandes Tailles</span>
+                  <span class="text-uppercase text-white">   Mode prenium</span>
+                  <span class="text-uppercase text-white">  Marques </span>
+
+
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="sorting"></div>
+                <label for="combo-sort">Trier :</label>
+                {{ exposed.sort_by }}
+
+              </div>
+
+
+            </div>
+            <!--  /.container  -->
+
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Homme
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+            <div class="container">
+              <div class="row">
+                <div class="subcat">
+                  <span class="text-uppercase text-white"> Vetements </span>
+                  <span class="text-uppercase text-white"> Sous- Vetements </span>
+                  <span class="text-uppercase text-white">  Chaussures </span>
+                  <span class="text-uppercase text-white">    Grandes Tailles</span>
+                  <span class="text-uppercase text-white">  sport</span>
+                  <span class="text-uppercase text-white"> Accessoires  </span>
+                  <span class="text-uppercase text-white">   Soins , rasage</span>
+
+                  <span class="text-uppercase text-white">  Marques </span>
+
+
+                </div>
+
+              </div>
+            </div>
+            <!--  /.container  -->
+
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Enfant & Bébé
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+            <div class="container">
+              <div class="row">
+                <div class="subcat">
+                  <span class="text-uppercase text-white"> Naissance,puériculture </span>
+                  <span class="text-uppercase text-white">bébé 0-3 ans</span>
+                  <span class="text-uppercase text-white">  Garçon 3-16 ans </span>
+                  <span class="text-uppercase text-white">  Chaussures , accessoires</span>
+                  <span class="text-uppercase text-white">  Jouet</span>
+                  <span class="text-uppercase text-white"> Chambre enfant  </span>
+
+
+                </div>
+
+              </div>
+            </div>
+            <!--  /.container  -->
+
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Meuble & Déco
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+            <div class="container">
+              <div class="row">
+                <div class="subcat">
+                  <span class="text-uppercase text-white"> Salon,canapé </span>
+                  <span class="text-uppercase text-white"> Salle à manger</span>
+                  <span class="text-uppercase text-white">  Dressing , rangement</span>
+                  <span class="text-uppercase text-white">  Chambre</span>
+                  <span class="text-uppercase text-white">  Literie</span>
+                  <span class="text-uppercase text-white"> Déecoration </span>
+                  <span class="text-uppercase text-white"> Arts de la table  </span>
+                  <span class="text-uppercase text-white">  jardin </span>
+                  <span class="text-uppercase text-white">  Tous les produits </span>
+
+
+                </div>
+
+              </div>
+            </div>
+            <!--  /.container  -->
+
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Linge de Maison
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+            <div class="container">
+              <div class="row">
+                <div class="subcat">
+                  <span class="text-uppercase text-white"> Linge de lit  </span>
+                  <span class="text-uppercase text-white"> Linge de bain</span>
+                  <span class="text-uppercase text-white">  Rideaux et deco textile </span>
+                  <span class="text-uppercase text-white">  Linge de table</span>
+                  <span class="text-uppercase text-white">  Equipement de lit</span>
+
+
+                </div>
+
+              </div>
+            </div>
+            <!--  /.container  -->
+
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Electromenager & high-tech
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+            <div class="container">
+              <div class="row">
+                <div class="subcat">
+                  <span class="text-uppercase text-white">  Gros électroménager    </span>
+                  <span class="text-uppercase text-white">   Petit électromenger    </span>
+                  <span class="text-uppercase text-white">   Ustensiles de cuisine    </span>
+                  <span class="text-uppercase text-white">   Maison et entretien    </span>
+                  <span class="text-uppercase text-white">  Beauté, bien étre    </span>
+                  <span class="text-uppercase text-white">    Smartphones,objets connectés  </span>
+                  <span class="text-uppercase text-white">    Informatique , tablette  </span>
+                  <span class="text-uppercase text-white">  TV, image,son    </span>
+                  <span class="text-uppercase text-white">      Consoles , jeux video</span>
+
+
+                </div>
+
+              </div>
+            </div>
+            <!--  /.container  -->
+
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Loisirs
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+            <div class="container">
+              <div class="row">
+                <div class="subcat">
+                  <span class="text-uppercase text-white">  Vètements et chaussures de sport  </span>
+                  <span class="text-uppercase text-white">   Activité sportives   </span>
+                  <span class="text-uppercase text-white">   Vin et gastronomie  </span>
+                  <span class="text-uppercase text-white">    couture ,mercerie   </span>
+                  <span class="text-uppercase text-white">   jeux et jouets    </span>
+                  <span class="text-uppercase text-white">     Jardin  </span>
+                  <span class="text-uppercase text-white">   Bagegerie </span>
+
+
+                </div>
+
+              </div>
+            </div>
+            <!--  /.container  -->
+
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+  </nav>
+  <!--/.Navbar-->
+  <!-- end nav -->
+  <div class="separator"></div>
+  <!-- breadcrumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>
+
+  <!-- breadcrumb -->
+
+  <!-- body -->
+  <div class="container-fluid">
+    <div class="wrapper1">
+
+      <!-- sidebar -->
+      <div class="sidebar1">
+        <ul class="category-list no-style-list level1">
+          <li class="li-item"><h5><a href="#" class="grhover">
+            Homme</h5> </a>
+
+            <ul class="no-style-list level2">
+              <li class="li-item">
+                <a href="#" class="grhover">
+                Vetements</a>
+              </li>
+              <li class="li-item">
+                <a href="#" class="grhover">
+                Jean (2411)</a>
+
+                <ul class="no-style-list level3">
+                  <li class="li-item">
+                    <a href="#" class="grhover">
+                      jean regular,droit</a>
+                  </li>
+                  <li class="li-item">
+                    <a href="#" class="grhover">
+                    jean slim</a>
+                  </li>
+                  <li class="li-item">
+                    <a href="#" class="grhover">
+                    jean skiny</a>
+                  </li>
+                  <li class="li-item">
+                    <a href="#" class="grhover">
+                    jean bootcut,large</a>
+                  </li>
+
+
+                </ul>
+              </li>
+              <li class="li-item"><a href="#" class="grhover">
+                Chaussures</a>
+              </li>
+              <li class="li-item"><a href="#" class="grhover">
+                accessoires</a>
+              </li>
+              <li class="li-item"><a href="#" class="grhover">
+                Beauté</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="li-item">
+            <h5><a href="#" class="grhover">
+              Femme</a>
+            </h5>
+          </li>
+
+          <li class="li-item">
+            <h5><a href="#" class="grhover">
+              Garçon 3-16 ans</a>
+            </h5>
+          </li>
+
+          <li class="li-item">
+            <h5><a href="#" class="grhover">
+              Ado 10-16 ans</a>
+            </h5>
+          </li>
+
+          <li class="li-item">
+            <h5><a href="#" class="grhover">
+              Filee 3-16 ans</a>
+            </h5>
+          </li>
+
+          <li class="li-item">
+            <h5><a href="#" class="grhover">
+              Bébé 0-3 ans</a>
+            </h5>
+          </li>
+          <li class="li-item">
+            <h5><a href="#" class="grhover">
+              Naissnaces</a>
+            </h5>
+          </li>
+        </ul>
+
+
+      </div>
+      <!-- main -->
+      <div class="main">
+        <section>
+
+          <div class="filter-div">
+
+
+            <!-- filter dropdowns -->
+            <ul class="nav nav-pills">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tailles</a>
+                <div class="dropdown-menu" style="">
+                  <a class="dropdown-item" href="#">Taille 1</a>
+                  <a class="dropdown-item" href="#">Taille 2</a>
+                  <a class="dropdown-item" href="#">Taille 3</a>
+
+                </div>
+
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Marques</a>
+                <div class="dropdown-menu" style="">
+                  <a class="dropdown-item" href="#">880 police</a>
+                  <a class="dropdown-item" href="#">abraxas</a>
+                  <a class="dropdown-item" href="#">absolute</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">others</a>
+                </div>
+
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Couleurs</a>
+                <div class="dropdown-menu" style="">
+                  <a class="dropdown-item" href="#">bleu</a>
+                  <a class="dropdown-item" href="#">noir</a>
+                  <a class="dropdown-item" href="#">gris</a>
+                  <a class="dropdown-item" href="#">jaune</a>
+                  <a class="dropdown-item" href="#">rouge</a>
+                  <a class="dropdown-item" href="#">blanc</a>
+                  <a class="dropdown-item" href="#">metalisé</a>
+
+                </div>
+
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Prix</a>
+                <div class="dropdown-menu" style="">
+                  <a class="dropdown-item" href="#">0-10 $</a>
+                  <a class="dropdown-item" href="#">10-30$</a>
+                  <a class="dropdown-item" href="#">30-80$</a>
+
+                  <a class="dropdown-item" href="#">plus que 80 $</a>
+                </div>
+
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Vendu par</a>
+                <div class="dropdown-menu" style="">
+                  <a class="dropdown-item" href="#">la redoute</a>
+                  <a class="dropdown-item" href="#">Best Seller</a>
+                  <a class="dropdown-item" href="#">salsa</a>
+                  <a class="dropdown-item" href="#">mango</a>
+                  <a class="dropdown-item" href="#">boohoo</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">others</a>
+                </div>
+
+              </li>
+
+            </ul>
+
+
+          </div>
+          <div class="catalog">
+
+
+            <a href="#">
+            <div class="product-card">
+              <div class="image-card">
+                <img src="https://picsum.photos/360/360?random=2">
+              </div>
+              <div class="product-describe">
+                <div class="p-title">Rimmel</div>
+                <div class="p-subtitle">crayon yeux soft kohl 1.2g</div>
+                <div class="p-price">3,95 €</div>
+
+              </div>
+
+
+            </div>
+
+            </a>
+            <a href="#">
+
+            <div class="product-card">
+              <div class="image-card">
+                <img src="https://picsum.photos/360/360?random=1">
+              </div>
+              <div class="product-describe">
+                <div class="p-title">Rimmel</div>
+                <div class="p-subtitle">crayon yeux soft kohl 1.2g</div>
+                <div class="p-price">3,95 €</div>
+
+              </div>
+
+
+            </div>
+            </a>
+            <a href="#">
+            <div class="product-card">
+              <div class="image-card">
+                <img src="https://picsum.photos/360/360?random=3">
+              </div>
+              <div class="product-describe">
+                <div class="p-title">Rimmel</div>
+                <div class="p-subtitle">crayon yeux soft kohl 1.2g</div>
+                <div class="p-price">3,95 €</div>
+
+              </div>
+
+
+            </div>
+            </a>
+            <a href="#">
+            <div class="product-card">
+              <div class="image-card">
+                <img src="https://picsum.photos/360/360?random=4">
+              </div>
+              <div class="product-describe">
+                <div class="p-title">Rimmel</div>
+                <div class="p-subtitle">crayon yeux soft kohl 1.2g</div>
+                <div class="p-price">3,95 €</div>
+
+              </div>
+
+
+            </div>
+            </a>
+            <a href="#">
+            <div class="product-card">
+              <div class="image-card">
+                <img src="https://picsum.photos/360/360?random=5">
+              </div>
+              <div class="product-describe">
+                <div class="p-title">Rimmel</div>
+                <div class="p-subtitle">crayon yeux soft kohl 1.2g</div>
+                <div class="p-price">3,95 €</div>
+
+              </div>
+
+
+            </div>
+            </a>
+            <a href="#">
+            <div class="product-card">
+              <div class="image-card">
+                <img src="https://picsum.photos/360/360?random=6">
+              </div>
+              <div class="product-describe">
+                <div class="p-title">Rimmel</div>
+                <div class="p-subtitle">crayon yeux soft kohl 1.2g</div>
+                <div class="p-price">3,95 €</div>
+
+              </div>
+
+
+            </div>
+            </a>
+            <a href="#">
+            <div class="product-card">
+              <div class="image-card">
+                <img src="https://picsum.photos/360/360?random=7">
+              </div>
+              <div class="product-describe">
+                <div class="p-title">Rimmel</div>
+                <div class="p-subtitle">crayon yeux soft kohl 1.2g</div>
+                <div class="p-price">3,95 €</div>
+
+              </div>
+
+
+            </div>
+            </a>
+            <a href="#">
+            <div class="product-card">
+              <div class="image-card">
+                <img src="https://picsum.photos/360/360?random=8">
+              </div>
+              <div class="product-describe">
+                <div class="p-title">Rimmel</div>
+                <div class="p-subtitle">crayon yeux soft kohl 1.2g</div>
+                <div class="p-price">3,95 €</div>
+
+              </div>
+
+
+            </div>
+            </a>
+            <a href="#">
+            <div class="product-card">
+              <div class="image-card">
+                <img src="https://picsum.photos/360/360?random=9">
+              </div>
+              <div class="product-describe">
+                <div class="p-title">Rimmel</div>
+                <div class="p-subtitle">crayon yeux soft kohl 1.2g</div>
+                <div class="p-price">3,95 €</div>
+
+              </div>
+
+
+            </div>
+            </a>
+
+          </div>
+
+        </section>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- end body --><!-- end nav --><!-- end nav --><!-- end nav --><!-- end nav --><!-- end nav --><!-- end nav -->
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

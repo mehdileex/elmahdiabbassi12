@@ -1,0 +1,89 @@
+.banner {
+display: flex;
+  justify-content: flex-end;
+
+  height: 27px;
+  background-color: #f1f1f1;
+padding-right: 20px;
+}
+
+body {
+  background-color: #fff;
+  color: #191919;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-size: 14px;
+  height: 100%;
+  line-height: 1.42857143;
+  margin: 0;
+  overscroll-behavior: none;
+}
+
+.header-item {
+
+  height: 42px;
+}
+
+.catnav{
+
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+}
+
+.searchfield {
+
+  width: 500px;
+
+}
+
+#search-input {
+  border:0;
+  border-bottom: 1px solid #767676;
+  height: 40px;
+  padding: 6px 70px 6px 8px;
+  box-shadow: none;
+  background-position: 460px -0px;
+  background-image: url('../img/srhicon.ico');
+  background-repeat: no-repeat;
+
+}
+#search-submit-button{
+  background-image: -webkit-gradient();
+
+}
+.search-form-div{
+  display: flex;
+  border-bottom: 1px solid lightgray;
+
+}
+#edit-search-api-fulltext {
+
+  width: 100%;
+  border: none;
+
+}
+
+.logo {
+
+  width: 307px;
+  margin-top: 3px;
+}
+
+.header-butons {
+  width: 300px;
+
+}
+
+.headerwraper {
+
+  display: flex;
+  padding: 13px 0;
+
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}

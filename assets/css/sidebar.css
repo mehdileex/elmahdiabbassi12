@@ -1,0 +1,35 @@
+.sidebar1{
+  width: 200px;
+}
+
+
+#edit-field-category   ul , #edit-field-category li {
+
+
+list-style: none;
+}
+
+.category-list li{
+
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.level1{
+
+  font-size: 18px;
+}
+.level2{
+
+  font-size: 16px;
+}
+.level3{
+
+  font-size: 12px;
+}
+
+.li-item:hover
+{
+
+  color:  gray;
+}
